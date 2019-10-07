@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Market</title>
+    <link rel="stylesheet" href="externalstyle.css">
+    <style>
+      input:invalid{
+        border: 2px dashed red;
+      }
+      input:valid {
+        border: 2px solid black
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 align="center">Online Market</h1>
+
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact</a>
+
+    <h2>New product Details</h2>
+    <br>
+
+    <table border="2">
+      <tr>
+        <td rowspan="5">Products</td>
+      </tr>
+
+      <tr>
+        <th>Name</th>
+        <td>x1</td>
+        <td>x2</td>
+        <td>x3</td>
+        <td>x4</td>
+      </tr>
+
+      <tr>
+        <th>Price</th>
+        <td>3.00</td>
+        <td>5.00</td>
+        <td>7.00</td>
+        <td>9.00</td>
+      </tr>
+      <tr>
+        <th>Quantity</th>
+        <td>5</td>
+        <td>6</td>
+        <td>12</td>
+        <td>16</td>
+      </tr>
+
+    </table>
+
+    <br>
+
+    <p>To order product online, please submit form below</p>
+
+    <form>
+      <fieldset>
+        <p>  <label for="date">Choose a Date :</label>
+        <input type="date" required>
+          <br><br>
+          <label for="number">Choose a number from 1-50</label>
+          <input type="number"  min="1" max="50" required>
+        </p>
+
+
+
+      <fieldset>
+      <legend>What is your favourite subject?</legend>
+      <input type="radio" checked id="Math" name="meal" >
+      <label>Math</label>
+      <input type="radio" name="sbj" value="science">
+      <label for="science">Science</label>
+      <input type="radio" name="sbj" value="bio">
+      <label for="bio">Biology</label>
+
+      </fieldset>
+      <br><br>
+
+      <select class="studylvl" name="Study level">
+        <option value="studylvl">Study level</option>
+        <<option selected>Undergraduate</option>
+        <option value="pg">Postgraduate</option>
+
+      </select>
+
+      <br><br>
+
+      <input type="submit" value="submit">
+      <input type="reset" value="Reset">
+
+      <br><br>
+    </fieldset>
+    </form>
+
+
+
+  </body>
+</html>
